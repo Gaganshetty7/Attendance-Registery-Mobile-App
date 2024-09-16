@@ -47,7 +47,7 @@ useEffect(() => {
       return;
     }
     try {
-      const response = await axios.get('http://192.168.0.109:3000/api/viewattendance', {
+      const response = await axios.get('http://0.0.0.0:3000/api/viewattendance', {
         params: {
           date: selectedDate.toISOString().substring(0, 10),
           subject: selectedSubject,
@@ -69,7 +69,7 @@ useEffect(() => {
 
   const fetchSubjects = async () => {
     try {
-        const response = await axios.get('http://192.168.0.109:3000/api/subjects');
+        const response = await axios.get('http://0.0.0.0:3000/api/subjects');
         setAllSubjects(response.data);
     } catch (error) {
         console.error('Error fetching subjects', error);

@@ -71,7 +71,7 @@ export default function MarkAttendanceScreen() {
 
     const fetchStudents = async (classroom) => {
         try {
-            const response = await axios.get('http://192.168.0.109:3000/api/students', {
+            const response = await axios.get('http://0.0.0.0:3000/api/students', {
                 params: { classroom }
             });
             setStudents(response.data);
@@ -82,7 +82,7 @@ export default function MarkAttendanceScreen() {
 
     const fetchSubjects = async () => {
         try {
-            const response = await axios.get('http://192.168.0.109:3000/api/subjects');
+            const response = await axios.get('http://0.0.0.0:3000/api/subjects');
             setAllSubjects(response.data);
         } catch (error) {
             console.error('Error fetching subjects', error);
@@ -91,7 +91,7 @@ export default function MarkAttendanceScreen() {
 
     const fetchLecturers = async () => {
         try {
-            const response = await axios.get('http://192.168.0.109:3000/api/lecturers');
+            const response = await axios.get('http://0.0.0.0:3000/api/lecturers');
             setAllLecturers(response.data);
         } catch (error) {
             console.error('Error fetching Lecturers', error);
@@ -114,7 +114,7 @@ export default function MarkAttendanceScreen() {
                 absentees: selectedAbsentees 
             };
 
-            const response = await axios.post('http://192.168.0.109:3000/api/attendance', attendancedata);
+            const response = await axios.post('http://0.0.0.0:3000/api/attendance', attendancedata);
 
             Alert.alert("Attendance Submitted Successfully!!");
             

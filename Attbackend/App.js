@@ -8,7 +8,7 @@ const port = 3000;
 
 // Configure CORS
 app.use(cors(
-  { origin: 'exp://192.168.0.109:8081' }
+  { origin: 'exp://0.0.0.0:8081' }
 ));
 
 // Middleware to parse JSON bodies
@@ -18,8 +18,8 @@ app.use(bodyParser.json());
 const pool = new Pool({
   user: 'postgres',
   host: 'localhost',
-  database: 'Attendancedb',
-  password: 'gagan@007',
+  database: 'abdb',
+  password: 'xxxx',
   port: 5432,
 });
 

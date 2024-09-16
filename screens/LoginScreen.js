@@ -23,7 +23,7 @@ export default function LoginScreen() {
         }
 
         try {
-            const response = await axios.get('http://192.168.0.109:3000/api/logindata', {
+            const response = await axios.get('http://0.0.0.0:3000/api/logindata', {
                 params: {
                     email: selectedEmail,
                     password: selectedPassword
