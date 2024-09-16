@@ -1,5 +1,10 @@
 {
-  "expo": {
+  "expo": {"splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "icon": "./assets/icon.png",
     "name": "AttendanceRegistry",
     "slug": "AttendanceRegistry",
     "version": "1.0.0"

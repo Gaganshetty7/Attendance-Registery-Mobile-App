@@ -1,5 +1,5 @@
 import { registerRootComponent } from 'expo';
-
+import interopRequireDefault from '@babel/runtime/helpers/interopRequireDefault';
 import App from './App';
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
